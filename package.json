@@ -1,0 +1,26 @@
+{
+  "name": "cpl-peerreviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brob/cpl-peerreviews.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brob/cpl-peerreviews/issues"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "nodejs-base64": "^1.0.3",
+    "trello": "^0.9.1",
+    "validator": "^11.0.0"
+  },
+  "homepage": "https://github.com/brob/cpl-peerreviews#readme"
+}
