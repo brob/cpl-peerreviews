@@ -17,14 +17,7 @@ exports.handler = (event, context, callback) => {
   const parsedBody = event.isBase64Encoded ? querystring.parse(body) : JSON.parse(body);
   console.log(parsedBody);
 
-  //Validate inputs
-  if(!validator.isEmail(parsedBody.email)){
-    console.log(`Email is invalid: '${parsedBody.email}'`);
-    return callback(null, {
-      statusCode: 400,
-      body: "Email is invalid"
-    })
-  }
+
 
   if(validator.isEmpty(parsedBody.type)){
     console.log(`Review type cannot be empty`);
