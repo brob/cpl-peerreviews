@@ -5,6 +5,9 @@ html {
 }
 body {
     margin: 0;
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 * {
     box-sizing: border-box;
@@ -36,7 +39,11 @@ button {
 p {
     line-height: 1.6em;
 }
-
+.container {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 5rem auto;
+}
 .button {
     display: inline-block;
     background-color: #000;
@@ -68,10 +75,11 @@ p {
     text-transform: uppercase;
     color: #000;
     display: flex;
-}
-.logo img {
+    margin: auto;
     width: 100%;
+    max-width: 40rem;
 }
+
 @media (max-width: 640px) {
     .navigation {
         justify-content: center;

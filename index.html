@@ -8,36 +8,39 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-<h1>Peer Reviews at CodePaLOUsa</h1>
 
-<p>We'll be doing Peer Reviews at CodePaLOUsa at 12:45 PM in the Belmont room. You can sign up to have a review with the form below.</p>
+    <div class="container">
+        <a href="https://peerreviews.dev"><img src="./img/logo.svg" class="logo" alt=""></a>
+    <h1>Peer Reviews at CodePaLOUsa</h1>
 
+    <p>We'll be doing Peer Reviews at CodePaLOUsa at 12:45 PM in the Belmont room. You can sign up to have a review with the form below. Want to get added to our video queue or view past peer reviews? <a href="https://peerreviews.dev">Head over here to peerreviews.dev</a>.</p>
 
-<form class="sign-up" action="/.netlify/functions/submit" method="post">
-    <label for="name">
-        Name *
-        <input class="field" type="text" name="name" required>
-    </label>
-    <label for="name">
-        URL *
-        <input class="field" type="text" name="url" required>
-    </label>
-    <label for="type" class="full-width select">What type of review?
-        <select class="field" name="type" id="">
-            <option value="Code Review">Code Review</option>
-            <option value="Design Review">Design Review</option>
-            <option value="Resume Review">Resumé Review</option>
-        </select>
-    </label>
-    <label for="description" class="full-width">
-        Additional Info:
-        <textarea class="field full-width" name="description" id="" cols="50" rows="10"></textarea>
-    </label>
+    <div class="feedback"></div>
 
-    <button type="submit">Send your info</button>
-</form>
+    <form class="sign-up" action="/.netlify/functions/submit" method="post">
+        <label for="name">
+            Name *
+            <input class="field" type="text" name="name" required>
+        </label>
+        <label for="name">
+            URL *
+            <input class="field" type="text" name="url" required>
+        </label>
+        <label for="type" class="full-width select">What type of review?
+            <select class="field" name="type" id="">
+                <option value="Code Review">Code Review</option>
+                <option value="Design Review">Design Review</option>
+                <option value="Resume Review">Resumé Review</option>
+            </select>
+        </label>
+        <label for="description" class="full-width">
+            Additional Info:
+            <textarea class="field full-width" name="description" id="" cols="50" rows="10"></textarea>
+        </label>
 
+        <button type="submit">Send your info</button>
+    </form>
+</div>
 
 <script src="/js/form.js"></script>
 
